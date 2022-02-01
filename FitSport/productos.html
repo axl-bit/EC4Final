@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Menu de Navegacíon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+
+    <!-- <ul class="Menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul> -->
+
+
+    <section class="header">
+
+
+
+        <nav class="navbar">
+            <h1>Fit Sport</h1>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </section>
+
+
+
+    <!-- <div class="page-nav">
+        <h1>Fit Sport</h1>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+        <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button>
+    </div> -->
+
+    <div class=" page-content">
+
+        <div class="product-container">
+            <h3>Camiseta Oficial Selección</h3>
+            <img src="img/Camiseta_B_Peru.jpg">
+            <h3>$220</h3>
+            <button class="button-add" onclick="add('Camiseta_B_Peru', 220 )">Agregar</button>
+        </div>
+        <div class="product-container">
+            <h3>Camiseta Alterna Selección</h3>
+            <img src="img/Camiseta_R_Peru.jpg">
+            <h3>$200</h3>
+            <button class="button-add" onclick="add('Camiseta_R_Peru', 220 )">Agregar
+                </0button>
+        </div>
+
+        <div class=" product-container">
+            <h3>Short Oficial Selección</h3>
+            <img src="img/Short_B_Peru.jpg">
+            <h3>$120</h3>
+            <button class="button-add" onclick="add('Short_B_Peru', 120 )">Agregar</button>
+        </div>
+        <div class=" product-container">
+            <h3>Short Alterno Selección</h3>
+            <img src="img/Short_R_Peru.jpg">
+            <h3>$100</h3>
+            <button class="button-add" onclick="add('Short_R_Peru', 100 )">Agregar</button>
+        </div>
+
+        <div class=" product-container">
+            <h3>Camiseta Arquero Selección</h3>
+            <img src="img/Arquero_Peru.jpg">
+            <h3>$180</h3>
+            <button class="button-add" onclick="add('Arquero_Peru', 180 )">Agregar</button>
+        </div>
+
+        <div class=" product-container">
+            <h3>Casaca Oficial Seleccción</h3>
+            <img src="img/Casaca_R_Peru.jpg">
+            <h3>$240</h3>
+            <button class="button-add" onclick="add('Casaca_R_Peru', 240 )">Agregar</button>
+        </div>
+
+        <div id=" product-cards" class="product-cards">
+        </div>
+    </div>
+
+    <footer>
+        <p>Pagina de diseño </p>
+    </footer>
+</body>
+
+</html>

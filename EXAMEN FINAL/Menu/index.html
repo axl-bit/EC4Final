@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='/style.css'>
+    <script src='funcion.js'></script>
+
+  
+
+</head>
+
+<div class="container">  
+    <form id="contact" action="" method="post">
+      <h1>LLENE LOS CAMPOS</h1>
+      <br/>
+      <fieldset>
+
+        <input placeholder="Nombre completo" type="text" tabindex="1" required autofocus name="nombre"  id="campo_nombre">
+      </fieldset>
+      <fieldset>
+        <input placeholder="E-mail" type="email" tabindex="2" required name="e-mail"  id="campo_email" >
+      </fieldset>
+      <fieldset>
+        <input placeholder="Numero de telefono" type="tel" tabindex="3" required name="telefono"  id="campo_cel">
+      </fieldset>
+      <fieldset>
+      <button id="btn_registrarse" name="submit" type="submit" id="contact-submit"  
+      data-submit="...Sending" target="_Parent"><a id="btn_registrarse" type="submit" href="/Menu/crud.html"></a>
+          Ingresar</button>
+       </form>
+
+      </fieldset>
+    </form>
+   
+  </div>
+</html>
+
+<script>
+  $(document).ready(function() {
+       $("#btn_registrarse").click(function(){
+
+           //var contenido = $("#miParrafo").text();
+
+           var campo_nombre = $("#campo_nombre").val();
+           var campo_email = $("#campo_email").val();
+           var campo_cel =$("#campo_cel").val();
+
+           if (campo_nombre.length == 0 || campo_email.length == 0|| campo_cel.length == 0 ) {
+               alert("No puede haber campos vacios");
+           }
+           else{
+               alert("Todo correcto");
+           }
+       });
+   }); 
+</script>

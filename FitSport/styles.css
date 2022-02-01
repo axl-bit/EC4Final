@@ -1,0 +1,217 @@
+body {
+  margin: 0px;
+  background-color: rgb(231, 240, 250);
+  font-family: "Roboto";
+}
+
+/* Cabacera Productos*/
+
+section {
+  padding: 5rem 5%;
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.header .navbar {
+  font-size: 1rem;
+  margin: 1rem;
+  color: var(-black);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-shadow: inset;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Menu {
+  list-style: none;
+  padding: 0;
+  background-color: #168cec;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.Menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  display: block;
+}
+
+.Menu li {
+  display: inline-block;
+  text-align: center;
+}
+
+.Menu li a:hover {
+  background: #e7e8e954;
+}
+
+.cabecera {
+  width: 600px;
+  text-align: justify;
+  list-style: none;
+  padding: 0;
+
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+button {
+  font-size: 16px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+
+/**/
+.navbar {
+  border: 1px solid transparent;
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  background-color: #168cec;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.navbar h1 {
+  margin: 20px;
+  color: white;
+}
+
+.navbar a {
+  margin: 20px;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.navbar a:hover {
+  background: #e7e8e954;
+}
+
+/**/
+
+.page-nav {
+  background-color: #168cec;
+  border: 1px solid transparent;
+  position: relative;
+  border-radius: 10px;
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.page-nav h1 {
+  margin: 20px;
+  color: white;
+}
+
+.button-checkout {
+  background-color: white;
+  color: black;
+  border: 2px solid #008cba; /*Blue*/
+  transition-duration: 0.4s;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+.button-checkout :hover {
+  background-color: #008cba;
+  color: white;
+}
+
+.page-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.product-container {
+  margin-left: 10px;
+  padding: 2px 16px;
+  position: relative;
+  box-shadow: 0 8px 0px 0 rgba(0, 0, 0, 0.1);
+}
+
+.sport-container {
+  display: flex;
+  margin-left: 10px;
+  padding: 2px 16px;
+  position: relative;
+  justify-content: center;
+  box-shadow: 0 8px 0px 0 rgba(0, 0, 0, 0.1);
+
+  /*background-color: white;*/
+}
+
+.product-container :hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.product-container img {
+  width: 300px;
+}
+
+.product-container h3 {
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.button-add {
+  background-color: white;
+  color: black;
+  border: 2px solid #4caf50; /*Green*/
+  transition-duration: 0.4s;
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+}
+
+.button-add :hover {
+  background-color: #4caf50; /*Green*/
+  color: white;
+}
+
+.button-add.disabled {
+  background-color: white;
+  color: black;
+  border: 2px solid #9e9e9e;
+  transition-duration: 0.4s;
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+}
+
+.button-add.disabled:hover {
+  background-color: #9e9e9e;
+  color: white;
+}
